@@ -3,15 +3,15 @@
 #include <Keypad.h>
 
 // LED pini
-int greenLED = 4;
-int redLED = 16;
+int greenLED = 13;
+int redLED = 12;
 
 //buzzer pins
-int buzzerPin = 27;
+int buzzerPin = 14;
 
 // servo pins
 // servo PWM datu pins
-int servoPin = 14;
+int servoPin = 27;
 
 // LCD pini
 // LCD ekrāna VCC ir strāvas pins
@@ -31,7 +31,7 @@ char keys[4][4] = {
 
 // katrai keypad rindai definējam pinus
 byte rowPins[4] = {19,18,5,17};
-byte colPins[4] = {13,12,15,2};
+byte colPins[4] = {16,4,2,15};
 
 Keypad keypad = Keypad(makeKeymap(keys), rowPins, colPins, 4, 4);
 
